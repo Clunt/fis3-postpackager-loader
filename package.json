@@ -1,25 +1,11 @@
 {
-  "name": "fis3-postpackager-loader",
-  "version": "2.1.4",
-  "description": "resouce loader",
+  "name": "fis3-postpackager-loader2",
+  "version": "1.0.0",
+  "description": "静态资源前端加载器，用来分析页面中`使用的`和`依赖的`资源（js或css）, 并将这些资源做一定的优化后插入页面中。如把零散的文件合并。",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha test/index.js"
+  "directories": {
+    "test": "test"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fex-team/fis3-postpackager-loader.git"
-  },
-  "keywords": [
-    "fis3",
-    "loader"
-  ],
-  "author": "fis",
-  "license": "BSD",
-  "bugs": {
-    "url": "https://github.com/fex-team/fis3-postpackager-loader/issues"
-  },
-  "homepage": "https://github.com/fex-team/fis3-postpackager-loader",
   "devDependencies": {
     "chai": "^3.2.0",
     "fis3": "^3.0.17",
@@ -27,5 +13,18 @@
   },
   "dependencies": {
     "source-map": "^0.5.6"
-  }
+  },
+  "scripts": {
+    "test": "mocha test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clunt/fis3-postpackager-loader2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Clunt/fis3-postpackager-loader2/issues"
+  },
+  "homepage": "https://github.com/Clunt/fis3-postpackager-loader2#readme"
 }
