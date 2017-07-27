@@ -153,7 +153,7 @@ rudePackager.defaultOptions = {
   }*/,
 
   // 强制内嵌css资源
-  inilneStyle: false,
+  inlineStyle: false,
 
   // 是否捕获页面内的 <script src="xxx"> 资源
   // 捕获完后，会合并部分资源, 统一放在页面底部。
