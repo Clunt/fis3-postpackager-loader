@@ -28,7 +28,7 @@ function rudePackager(ret, pack, settings, opt) {
       patterns = [patterns];
     }
 
-    
+
     patterns.forEach(function(pattern, index) {
       var exclude = typeof pattern === 'string' && pattern.substring(0, 1) === '!';
 
@@ -119,6 +119,9 @@ rudePackager.defaultOptions = {
   // 样式占位符
   stylePlaceHolder: '<!--STYLE_PLACEHOLDER-->',
 
+  // 样式占位符
+  styleInlinePlaceHolder: '<!--STYLE_INLINE_PLACEHOLDER-->',
+
   // 资源占位符
   resourcePlaceHolder: '<!--RESOURCEMAP_PLACEHOLDER-->',
 
@@ -148,6 +151,9 @@ rudePackager.defaultOptions = {
     includeAsyncs: false, // 可以配置成 true 用来包含异步依赖。
     ignore: null // 忽略列表，可以配置部分文件不被 all in one.
   }*/,
+
+  // 强制内嵌css资源
+  inilneStyle: false,
 
   // 是否捕获页面内的 <script src="xxx"> 资源
   // 捕获完后，会合并部分资源, 统一放在页面底部。
